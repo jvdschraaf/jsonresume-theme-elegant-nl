@@ -4,18 +4,18 @@ var moment = require('moment');
 (function(moment) {
     var STRINGS = {
         nodiff: '',
-        year: 'year',
-        years: 'years',
-        month: 'month',
-        months: 'months',
-        day: 'day',
-        days: 'days',
-        hour: 'hour',
-        hours: 'hours',
-        minute: 'minute',
-        minutes: 'minutes',
-        second: 'second',
-        seconds: 'seconds',
+        year: 'jaar',
+        years: 'jaren',
+        month: 'maand',
+        months: 'maanden',
+        day: 'dag',
+        days: 'dagen',
+        hour: 'uur',
+        hours: 'uren',
+        minute: 'minuut',
+        minutes: 'minuten',
+        second: 'seconde',
+        seconds: 'seconden',
         delimiter: ' '
     };
     moment.fn.preciseDiff = function(d2) {
@@ -88,7 +88,7 @@ var moment = require('moment');
             if (dDiff >= 1) {
                 return pluralize(dDiff, 'day');
             } else {
-                return 'Joined Today';
+                return 'Vandaag begonnen';
             }
         } else  {
             var result = [];

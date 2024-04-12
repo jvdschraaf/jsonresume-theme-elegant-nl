@@ -2,10 +2,10 @@ unless _.isEmpty(resume.education)
   .detail#education
     .icon
       i.fs-lg.icon-graduation-cap
-      span.mobile-title Education
+      span.mobile-title Opleidingen
 
     .info
-      h4.title.text-uppercase Education
+      h4.title.text-uppercase Opleidingen
 
       .content
         ul.list-unstyled.clear-margin
@@ -26,7 +26,7 @@ unless _.isEmpty(resume.education)
 
                 p.text-muted(class=!education_info.gpa && _.isEmpty(education_info.courses) ? 'clear-margin' : '')
                   small
-                    |#{education_info.startDate} - #{education_info.endDate || 'Present'}
+                    |#{education_info.startDate} - #{education_info.endDate || 'Heden'}
                 i= education_info.gpa
 
                 unless _.isEmpty(education_info.courses)
